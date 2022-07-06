@@ -39,26 +39,7 @@ public class PillSearchTest {
     // without recycling the same bad result?
     // I'm guessing by creating mock data, but how?
 
-    @Test
-    public void searchOnExactNameTest() {
-        onView(withId(R.id.etName)).perform(typeText("Levoxyl"), closeSoftKeyboard());
-        onView(withId(R.id.btnLoadList)).perform(click());
-        onView(withId(R.id.recVwResultList)).check(new RecyclerViewItemCountAssertion(5));
-    }
 
-    @Test
-    public void searchOnShortNameTest() {
-        onView(withId(R.id.etName)).perform(typeText("aa"), closeSoftKeyboard());
-        onView(withId(R.id.btnLoadList)).perform(click());
-        onView(withId(R.id.recVwResultList)).check(new RecyclerViewItemCountAssertion(0));
-    }
-
-    @Test
-    public void searchOnImprintTest() {
-        onView(withId(R.id.etImprint)).perform(typeText("dp"), closeSoftKeyboard());
-        onView(withId(R.id.btnLoadList)).perform(click());
-        onView(withId(R.id.recVwResultList)).check(new RecyclerViewItemCountAssertion(20));
-    }
 
     @Test
     public void searchOnBadImprintTest() {

@@ -1,0 +1,5 @@
+com.stvjuliengmail.smartmeds.RxInfoUiTest clickOnMyMedsSaveButtonTest
+com.stvjuliengmail.smartmeds.RxInfoUiTest clickOnInteractionsButtonTest
+com.stvjuliengmail.smartmeds.PillSearchTest searchOnShapeTest
+com.stvjuliengmail.smartmeds.PillSearchTest searchOnBadImprintTest
+com.stvjuliengmail.smartmeds.PillSearchTest searchOnColorTest
